@@ -1,21 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# NegotiAI
 
-# Run and deploy your AI Studio app
+> "Negotiate Smarter. Win Better Deals."
 
-This contains everything you need to run your app locally.
+NegotiAI is a premium, AI-powered negotiation assistant built for Android using Kotlin and Jetpack Compose. It analyzes job offers, contracts, vendor quotes, and salary hikes to uncover hidden clauses, assess market competitiveness, and generate strategic counter-offers to help you secure the best possible deal.
 
-View your app in AI Studio: https://ai.studio/apps/580602f5-eabe-4b49-b021-8832c68bfbfb
+## Features
 
-## Run Locally
+- **Modern Premium Interface**: Sleek dark mode design inspired by top-tier SaaS platforms, built purely with Jetpack Compose.
+- **AI Document Analysis**: Submit details of your offer and let the Gemini-powered AI analyze the terms for risks and opportunities.
+- **Strategic Insights**: Receive a calculated breakdown of your offer's strengths, weaknesses, and a recommended strategy.
+- **Local History Tracking**: All past negotiations are securely saved locally on your device using Room database for easy review.
+- **Dynamic Theming**: Fluid and highly polished layout utilizing Material 3 components, animations, and typography.
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+## Tech Stack
 
+- **UI**: Jetpack Compose (Material Design 3)
+- **Language**: Kotlin
+- **Architecture**: MVVM, Clean Architecture patterns
+- **Local Database**: Room
+- **Networking**: Retrofit, OkHttp, kotlinx.serialization
+- **AI Engine**: Google Gemini API
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+## Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   git clone <repository_url>
+   cd NegotiAI
+   ```
+
+2. **Configure API Keys**
+   This application requires a Google Gemini API key to function.
+   - Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and get a free Gemini API Key.
+   - In the root of the project, create a file named `.env` (or copy `.env.example`).
+   - Add your API key to the file:
+     ```
+     GEMINI_API_KEY="your_api_key_here"
+     ```
+
+3. **Build & Run**
+   Open the project in Android Studio and sync Gradle files. Ensure you have the Android SDK installed and configured.
+   Build and run on your preferred emulator or physical device.
