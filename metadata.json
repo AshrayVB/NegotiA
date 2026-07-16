@@ -1,0 +1,6 @@
+{
+  "name": "NegotiAI",
+  "description": "Your AI Negotiation Expert. Negotiate Smarter. Win Better Deals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
